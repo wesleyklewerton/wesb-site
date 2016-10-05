@@ -535,6 +535,17 @@
                         }
                     });
                 });
+
+				function resizeBanner(){
+					$("#banner").height($( window ).height()-220);
+				}
+
+				resizeBanner();
+
+				$( window ).resize(function() {
+				  	resizeBanner();
+				});
+
 			});
 		</script
 	</body>
