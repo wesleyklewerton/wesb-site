@@ -1,6 +1,7 @@
 $(function(){
-    var $nav = $('#header');
+    /*var $nav = $('#header');
 
+    //console.log($nav.offset().top)
     $nav.scrollspy({
         min: $nav.offset().top,
         onEnter: function(element, position) {
@@ -12,7 +13,7 @@ $(function(){
             $("#logo-small").show();
         }
     });
-
+*/
     // for each element with the class 'color'
     $('article').each(function eachElement() {
         // cache the jQuery object
@@ -24,6 +25,7 @@ $(function(){
             max: position.top + $this.height(),
             onEnter: function onEnter(element/*, position*/) {
                 $(".current").removeClass("current");
+
                 if(element.id == "about"){
                     $('a[href="#page-wrapper"]').parent().addClass("current");
                 }else{
@@ -37,6 +39,25 @@ $(function(){
             }
         });
     });
+
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutationRecord) {
+            if($("#header").hasClass("alt")){
+                $("#logo-small").hide();
+            }else{
+                $("#logo-small").show();
+            }
+        });
+    });
+
+    var target = document.getElementById('header');
+    observer.observe(target, { attributes : true, attributeFilter : ['class'] });
+
+    $('header').on('change', function() {
+        console.log("Oi")
+        //$('#myDiv').addClass('submission-ok').trigger('classChange');
+    });
+
 
     function resizeBanner(){
         $("#banner").height($( window ).height()-220);
