@@ -1,0 +1,23 @@
+{
+	"name": "wesb",
+	"version": "1.0.0",
+	"description": "wesb",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"files": [
+		"app.js"
+	],
+	"author": "Marcio Barros",
+	"license": "MIT",
+	"homepage": "https://github.com/marciobarros/marciobarros.github.io",
+	"dependencies": {
+		"serve-static": "",
+		"connect": "",
+		"network":""
+  	}
+}
