@@ -13,59 +13,26 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<style>
-		div.topics section p {
-			font-size: 14px; 
-			line-height: 1.4em; 
-			margin-top: 0px; 
-			margin-bottom: 12px;
-		}
-		header.reveal span.pending {
-			display: block;
-			margin-left: 0px; 
-			font-size: 10px;
-			line-height: 1em;
-		}
-		header.reveal.alt span.pending {
-			color: yellow;
-			font-size: 14px;
-			font-weight: 900;
-		}
-		div.descricao p {
-			text-align: justify;
-		}
-		div.datas {
-			border: 2px solid #70aecd;
-			padding: 16px 8px 32px 8px;
-			text-align: center;
-		}
-		div.datas h2 {
-			color: #70aecd;
-		}
-		div.datas p {
-			margin-bottom: 8px;
-		}
-		#logo img {
-			width: 111px;
-			height: 30px;
-		}
-		</style>
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
-	<body class="index">
+	<body class="index" data-spy="scroll">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 			<header id="header" class="alt">
 				<h1 id="logo">
-					<a href="index.html"><img src="images/logo.png"/></a>
-					<span class="pending">Evaluation: Pending</span>
+					<img id="logo-small" width="80px" src="images/logo-small.png"/>
+
+					<!--<a href="index.html"><img src="images/logo.png"/></a>-->
+					<!--<span class="pending">Evaluation: Pending</span>-->
 				</h1>
 				<nav id="nav">
 					<ul>
-						<li class="current"><a href="index.html">Homepage</a></li>
-						<li><a href="programacao.html">Programação</a></li>
-						<li><a href="organizacao.html">Organização</a></li>
-						<li><a href="comite.html">Comitê</a></li>
+						<li class="current"><a class="fit scrolly" href="#page-wrapper">Início</a></li>
+						<li><a href="#call-for-papers" class="fit scrolly">Chamada de Trabalhos</a></li>
+						<li><a href="#program" class="scrolly">Programação</a></li>
+						<li><a href="#organizers" class="scrolly">Organização</a></li>
+						<li><a href="#committee" class="scrolly">Comitê</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -73,40 +40,50 @@
 			<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
+					<!--
 					<header>
 						<h2>WESB 2017</h2>
 					</header>
-					<p>21 de Setembro de 2016
+					-->
+					<a href="index.html"><img height="150px" src="images/logo-wesb-transparent-white.png"></a>
+					<p>21 de Setembro de 2017
 					<br />
 					Fortaleza, Ceará, Brasil
 					<br />
 					</p>
 					<footer>
 						<ul class="buttons vertical">
-							<li><a href="#main" class="button fit scrolly">Mais informações</a></li>
+							<li><a href="#about" class="button fit scrolly">Mais informações</a></li>
 						</ul>
 					</footer>
 				</div>
 			</section>
 
+			<br>
+
 			<!-- Main -->
-			<article id="main">
-				<header class="container">
+			<article id="about">
+				<header class="special container">
+					<span class="icon fa-info-circle"></span>
+					<h2><strong>Sobre o WESB</strong></h2>
+				</header>
+
+				<section class="wrapper style1 container special">
 					<!--h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP</h2-->
-					
+
 					<div class="row">
 						<div class="8u 12u(narrower) descricao">
-							<p>O Workshop de Engenharia de Software Baseada em Busca (WESB) é o fórum nacional voltado 
-							para a área de Engenharia de Software Baseada em Busca. A oitava edição do workshop pretende atrair a participação 
-							de pesquisadores de diversos segmentos da Engenharia de Software, visando estimular a inclusão de algoritmos de 
-							busca como uma forma de resolução de problemas de Engenharia de Software. O workshop incluirá sessões técnicas, 
+							<p>O Workshop de Engenharia de Software Baseada em Busca (WESB) é o fórum nacional voltado
+							para a área de Engenharia de Software Baseada em Busca. A oitava edição do workshop pretende atrair a participação
+							de pesquisadores de diversos segmentos da Engenharia de Software, visando estimular a inclusão de algoritmos de
+							busca como uma forma de resolução de problemas de Engenharia de Software. O workshop incluirá sessões técnicas,
 							uma sessão de pôster e um painel.</p>
-							
-							<p>O WESB é um workshop sobre fundamentos teóricos e experiências práticas da Engenharia de Software Baseada em Busca 
-							(SBSE - Search Based Software Engineering) em projetos acadêmicos e industriais. Relatos de avanços no estado da arte 
+
+							<p>O WESB é um workshop sobre fundamentos teóricos e experiências práticas da Engenharia de Software Baseada em Busca
+							(SBSE - Search Based Software Engineering) em projetos acadêmicos e industriais. Relatos de avanços no estado da arte
 							e no estado da prática são esperados, promovendo a troca de experiências, opiniões e debates entre os participantes.</p>
 						</div>
-						
+
 						<div class="4u 12u(narrower)">
 							<div class="datas">
 								<h2>Datas Importantes!</h2>
@@ -118,7 +95,7 @@
 							</div>
 						</div>
 					</div>
-				</header>
+				</section>
 
 				<!-- One -->
 				<!-- section class="wrapper style2 container special-alt">
@@ -128,9 +105,9 @@
 							<header>
 								<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
 							</header>
-							
+
 							<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-							
+
 							<footer>
 								<ul class="buttons">
 									<li><a href="#" class="button">Find Out More</a></li>
@@ -149,21 +126,29 @@
 						</div>
 					</div>
 				</section -->
+			</article>
+
+			<article id="call-for-papers">
+				<header class="special container">
+					<span class="icon fa-calendar"></span>
+					<h2><strong>Chamada de Trabalhos</strong></h2>
+				</header>
 
 				<!-- Topicos -->
-				<section class="wrapper style2 container special">
+				<section class="wrapper style1 container special">
+
 					<div class="row">
-						<!--p>O workshop pretende atrair artigos em todos os temas relacionados à área, incluindo avanços teóricos, pesquisa 
-						aplicada e prática, estudos empíricos, e relatórios de experiências na indústria. Logo, são bem-vindos artigos que 
-						tratem quaisquer problemas no domínio da Engenharia de Software através da adoção de técnicas de otimização e do 
-						uso de meta-heurísticas. É particularmente encorajada a submissão de artigos que demonstram novas estratégias de 
-						busca ou descrevem a aplicação das mesmas em novos problemas da Engenharia de Software, ainda não abordadas em 
-						trabalhos anteriores. Os artigos também podem tratar o uso de métodos e técnicas para melhorar a aplicabilidade, 
+						<!--p>O workshop pretende atrair artigos em todos os temas relacionados à área, incluindo avanços teóricos, pesquisa
+						aplicada e prática, estudos empíricos, e relatórios de experiências na indústria. Logo, são bem-vindos artigos que
+						tratem quaisquer problemas no domínio da Engenharia de Software através da adoção de técnicas de otimização e do
+						uso de meta-heurísticas. É particularmente encorajada a submissão de artigos que demonstram novas estratégias de
+						busca ou descrevem a aplicação das mesmas em novos problemas da Engenharia de Software, ainda não abordadas em
+						trabalhos anteriores. Os artigos também podem tratar o uso de métodos e técnicas para melhorar a aplicabilidade,
 						a eficiência e a eficácia de técnicas baseadas em busca quando aplicadas a problemas da Engenharia de Software. </p-->
-						
+
 						<div class="4u 12u(narrower) topics">
 							<section>
-								<span class="icon featured fa-check"></span>
+								<img src="images/topics-of-interesting.jpg" alt="" />
 								<header>
 									<h3>Tópicos de Interesse</h3>
 								</header>
@@ -179,7 +164,7 @@
 
 						<div class="4u 12u(narrower) topics">
 							<section>
-								<span class="icon featured fa-check"></span>
+								<img  src="images/search-techiniques.jpg" alt="" />
 								<header>
 									<h3>Técnicas de Busca</h3>
 								</header>
@@ -193,7 +178,7 @@
 
 						<div class="4u 12u(narrower) topics">
 							<section>
-								<span class="icon featured fa-check"></span>
+								<img src="images/se-problems.jpg" alt="" />
 								<header>
 									<h3>Problemas de ES</h3>
 								</header>
@@ -222,10 +207,10 @@
 					<header class="major">
 						<h2>Critérios de Aceitação</h2>
 					</header>
-					
-					<p>Todos os artigos serão avaliados por pelo menos três membros do Comitê de Programa. O aceite será baseado na originalidade 
-					e contribuição para o avanço da teoria ou prática para a área. Os critérios de julgamento são sua <strong>adequação</strong> 
-					ao escopo do workshop, aplicação ou <strong>relevância prática</strong>, <strong>qualidade</strong> técnica, <strong>clareza</strong> 
+
+					<p>Todos os artigos serão avaliados por pelo menos três membros do Comitê de Programa. O aceite será baseado na originalidade
+					e contribuição para o avanço da teoria ou prática para a área. Os critérios de julgamento são sua <strong>adequação</strong>
+					ao escopo do workshop, aplicação ou <strong>relevância prática</strong>, <strong>qualidade</strong> técnica, <strong>clareza</strong>
 					de apresentação e <strong>originalidade</strong>. A seleção considerará submissões que apresentam os tipos de trabalhos abaixo.</p>
 
 					<div class="row">
@@ -236,9 +221,9 @@
 								<header>
 									<h3>Técnicas de solução inovadoras</h3>
 								</header>
-								<p>É encorajada a submissão de artigos que adotam técnicas de busca em aspectos da Engenharia de Software ainda não 
-								aplicados em trabalhos anteriores. O artigo deve apresentar uma avaliação ou uma prova de conceito mostrando que a 
-								técnica proposta funciona e é escalável para problemas reais. O artigo também deve ser claro quanto as suas 
+								<p>É encorajada a submissão de artigos que adotam técnicas de busca em aspectos da Engenharia de Software ainda não
+								aplicados em trabalhos anteriores. O artigo deve apresentar uma avaliação ou uma prova de conceito mostrando que a
+								técnica proposta funciona e é escalável para problemas reais. O artigo também deve ser claro quanto as suas
 								contribuições no que diz respeito a trabalhos relacionados.</p>
 							</section>
 
@@ -250,9 +235,9 @@
 								<header>
 									<h3>Avaliações de abordagens</h3>
 								</header>
-								<p>A avaliação deve se basear em métodos científicos na forma de estudos empíricos, 
-								experimentos, estudos de caso, simulações e análises formais. A avaliação apresentada no artigo deve ser baseada em 
-								um método de pesquisa sólido e apropriado. Os resultados devem ser relevantes, constituindo um aumento do conhecimento 
+								<p>A avaliação deve se basear em métodos científicos na forma de estudos empíricos,
+								experimentos, estudos de caso, simulações e análises formais. A avaliação apresentada no artigo deve ser baseada em
+								um método de pesquisa sólido e apropriado. Os resultados devem ser relevantes, constituindo um aumento do conhecimento
 								atual. Relatos de experiência destacando lições aprendidas também são bem-vindos.</p>
 							</section>
 						</div>
@@ -265,9 +250,9 @@
 								<header>
 									<h3>Novas visões</h3>
 								</header>
-								<p>A visão delineada deve esquematizar novas maneiras de olhar para assuntos importantes, apresentando novas ideias 
-								criativas e repensando as noções atuais. Um artigo de visão deve revelar e provocar o pensamento, provendo novas 
-								percepções do estado da arte ou prática. As ideias apresentadas devem ser originais e parecerem sólidas. Artigos que 
+								<p>A visão delineada deve esquematizar novas maneiras de olhar para assuntos importantes, apresentando novas ideias
+								criativas e repensando as noções atuais. Um artigo de visão deve revelar e provocar o pensamento, provendo novas
+								percepções do estado da arte ou prática. As ideias apresentadas devem ser originais e parecerem sólidas. Artigos que
 								apenas apresentam uma breve ideia ou propõem pesquisa em um tópico serão rejeitados.</p>
 							</section>
 						</div>
@@ -277,9 +262,9 @@
 								<header>
 									<h3>Ferramentas</h3>
 								</header>
-								<p>Ferramentas devem empregar técnicas de otimização para a solução de problemas de Engenharia de Software. As técnicas 
-								empregadas, bem como o problema resolvido, devem estar descritos no artigo. É necessário demonstrar a viabilidade da 
-								ferramenta, incluindo suas vantagens/desvantagens e limitações de uso, por meio de resultados de sua aplicação. Se possível, 
+								<p>Ferramentas devem empregar técnicas de otimização para a solução de problemas de Engenharia de Software. As técnicas
+								empregadas, bem como o problema resolvido, devem estar descritos no artigo. É necessário demonstrar a viabilidade da
+								ferramenta, incluindo suas vantagens/desvantagens e limitações de uso, por meio de resultados de sua aplicação. Se possível,
 								disponibilizar uma versão da ferramenta para a avaliação.</p>
 							</section>
 						</div>
@@ -293,20 +278,131 @@
 				</section>
 
 				<!-- Formato -->
-				<section class="wrapper style2 container special-alt">
+				<section class="wrapper style1 container special-alt">
 					<header class="major">
 						<h2>Formato das submissões</h2>
 					</header>
-					
-					<p>Serão aceitos artigos completos, que serão apresentados oralmente, bem como artigos curtos, a serem apresentados na forma de pôster. 
-					Os artigos podem ser escritos em português ou inglês. Todas as submissões devem seguir o estilo de formatação dos eventos da Sociedade 
-					Brasileira de Computação (SBC). Os artigos devem reportar trabalhos originais que não foram submetidos simultaneamente em outros veículos 
+
+					<p>Serão aceitos artigos completos, que serão apresentados oralmente, bem como artigos curtos, a serem apresentados na forma de pôster.
+					Os artigos podem ser escritos em português ou inglês. Todas as submissões devem seguir o estilo de formatação dos eventos da Sociedade
+					Brasileira de Computação (SBC). Os artigos devem reportar trabalhos originais que não foram submetidos simultaneamente em outros veículos
 					e não foram publicados ou apresentados em outros fóruns.</p>
-					
+
 					<p>Os artigos completos devem ter no máximo 10 páginas, incluindo figuras e referências. Os artigos curtos obedecerão a um limite máximo
-					de 6 páginas. Todas as submissões devem estar no formato Adobe Portable Document Format (PDF) e devem ser submetidos através do sistema 
-					JEMS até a data limite. Para que o artigo seja incluído nos anais eletrônicos do workshop, será necessário que pelo menos um dos autores 
+					de 6 páginas. Todas as submissões devem estar no formato Adobe Portable Document Format (PDF) e devem ser submetidos através do sistema
+					JEMS até a data limite. Para que o artigo seja incluído nos anais eletrônicos do workshop, será necessário que pelo menos um dos autores
 					de cada artigo aceito se inscreva para apresentá-lo no evento.</p>
+				</section>
+			</article>
+
+			<!-- CTA -->
+			<section id="cta">
+				<header>
+					<h2>Venha conhecer a <strong>Terra do Sol</strong></h2>
+					<!--p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p-->
+				</header>
+			</section>
+
+			<br>
+
+			<!-- Program -->
+			<article id="program">
+				<header class="special container">
+					<span class="icon fa-calendar"></span>
+					<h2><strong>Programação</strong></h2>
+				</header>
+				<section class="wrapper style3 container special">
+					<div class="row">
+						<div class="12u 12u(narrower) descricao">
+							<p>Em Breve</p>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<!-- Program -->
+			<article id="organizers">
+					<header class="special container">
+						<span class="icon fa-gear"></span>
+						<h2><strong>Organização</strong></h2>
+					</header>
+
+					<section class="wrapper style1 container special">
+						<h2>Coordenadores do Comitê de Programa</h2>
+
+						<div class="row">
+							<div class="6u 12u(narrower)">
+								<section>
+									<img width="100px" src="images/marcio.jpg">
+									<h3 class="organizador"><b>Márcio Barros</b></h3>
+									<p class="organizers-address">Departamento de Sistemas de Informação</p>
+									<p class="organizers-address">UNIRIO</p>
+									<p class="organizers-address">Rio de Janeiro, RJ</p>
+									<p class="organizers-address">marcio.barros@uniriotec.br</p>
+								</section>
+							</div>
+
+							<div class="6u 12u(narrower)">
+								<section>
+									<img width="100px" src="images/silvia.jpg">
+									<h3 class="organizador"><b>Silvia Regina Vergilio</b></h3>
+									<p class="organizers-address">Departamento de Informática</p>
+									<p class="organizers-address">UFPR</p>
+									<p class="organizers-address">Curitiba, PR</p>
+									<p class="organizers-address">silvia@inf.ufpr.br</p>
+								</section>
+							</div>
+						</div>
+
+						<h2 class="sub-section">Comissão Organizadora</h2>
+
+						<div class="row">
+							<div class="6u 12u(narrower)">
+								<section>
+									<h3 class="organizador">Leila Maciel de Almeida e Silva</h3>
+									<p class="center">Universidade Federal de Sergipe</p>
+								</section>
+							</div>
+
+							<div class="6u 12u(narrower)">
+								<section>
+									<h3 class="organizador">André Brito de Carvalho</h3>
+									<p class="center">Universidade Federal de Sergipe</p>
+								</section>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="6u 12u(narrower)">
+								<section>
+									<h3 class="organizador">Maria Cláudia F.P. Emer</h3>
+									<p class="center">Universidade Tecnológica Federal do Paraná</p>
+								</section>
+							</div>
+
+							<div class="6u 12u(narrower)">
+								<section>
+									<h3 class="organizador">Thelma Elita Colanzi</h3>
+									<p class="center">Universidade Estadual de Maringá</p>
+								</section>
+							</div>
+						</div>
+					</section>
+				</header>
+			</article>
+
+			<!-- Program -->
+			<article id="committee">
+				<header class="special container">
+					<span class="icon fa-book"></span>
+					<h2><strong>Comitê de Programa</strong></h2>
+				</header>
+				<section class="wrapper style3 container special">
+					<div class="row">
+						<div class="12u 12u(narrower) descricao">
+							<p>Em Breve</p>
+						</div>
+					</div>
 				</section>
 			</article>
 
@@ -318,9 +414,8 @@
 				</header>
 				<footer>
 					<ul class="buttons">
-						<li><a href="programacao.html" class="button special">Programação</a></li>
-						<li><a href="organizacao.html" class="button">Organização</a></li>
-						<li><a href="comite.html" class="button">Comitê</a></li>
+						<li><a href="#" class="button">Envie o seu Trabalho</a></li>
+						<li><a href="#" class="button">Inscreva-se</a></li>
 					</ul>
 				</footer>
 			</section>
@@ -345,7 +440,9 @@
 		<script src="assets/js/jquery.scrollgress.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
+		<script src="assets/js/jquery-scrollspy.min.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/script.js"></script>
 	</body>
 </html>

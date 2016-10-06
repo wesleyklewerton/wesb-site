@@ -1,0 +1,51 @@
+div.topics section p {
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+header.reveal span.pending {
+    display: block;
+    margin-left: 0px;
+    font-size: 10px;
+    line-height: 1em;
+}
+header.reveal.alt span.pending {
+    color: yellow;
+    font-size: 14px;
+    font-weight: 900;
+}
+div.descricao p {
+    text-align: justify;
+}
+div.datas {
+    border: 2px solid #70aecd;
+    padding: 16px 8px 32px 8px;
+    text-align: center;
+}
+div.datas h2 {
+    color: #70aecd;
+}
+div.datas p {
+    margin-bottom: 8px;
+    margin-left: 4px;
+    text-align: left;
+}
+#logo img {
+    float: left;
+}
+h3.organizador { font-weight: 400;}
+
+.center{
+    text-align: center;
+}
+.organizers-address{
+    text-align: center;
+    margin: 0 0 0 0;
+}
+.sub-section{
+    margin-top: 2.8em;
+}
+#logo-small{
+    display: none;
+}
