@@ -49,3 +49,13 @@ h3.organizador { font-weight: 400;}
 #logo-small{
     display: none;
 }
+p.title {
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+p.authors {
+	font-size: 12px;
+}
+p.tpc {
+	margin-bottom: 0px;
+}
